@@ -3,7 +3,7 @@ class FCBException(Exception):
         super(FCBException, self).__init__(
             "[{}:{}]{}".format(error_code, error_id, error_description)
         )
-        self.error_description = error_description
+        self.error_description = str(error_description)
         self.error_id = error_id
         self.error_code = error_code
 
